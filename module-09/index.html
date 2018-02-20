@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="info">
+    <h2 class="info-press">You pressed: <span class="key-pressed info-text"></span></h2>
+    <h2 class="info-click">
+      click x = <span class="x-position info-text"></span>
+      click y = <span class="y-position info-text"></span>
+    </h2>
+    <div>
+      <input class = "sound-checkbox" type="checkbox" value="None" id="slideThree" name="check" checked />
+      <label for="slideThree" class="sound-label">Sound</label>
+    </div>
+  </div>
+  
+  <div class="keyboard"></div>
+  
+  <script id="keyboard-tmpl" type="text/x-handlebars-template">
+  {{#each this}}
+    <div class="keyboard-row">
+    {{#each this}}
+      <button class="keyboard-key">{{this}}</button>
+    {{/each}}
+    </div>
+  {{/each}}
+    <div class="keyboard-row">
+      <button class="keyboard-key keyboard-key-space"></button>
+    </div>
+  </script>
+  
+  <audio class="sonidos" src="//goo.gl/T1rxRG" data-note="do"></audio>
+  <audio class="sonidos" src="//goo.gl/KT8FN3" data-note="re"></audio>
+  <audio class="sonidos" src="//goo.gl/1SfsNS" data-note="mi"></audio>
+  <audio class="sonidos" src="//goo.gl/OsOCXe" data-note="fa"></audio>
+  <audio class="sonidos" src="//goo.gl/vukZmv" data-note="sol"></audio>
+  <audio class="sonidos" src="//goo.gl/Bjd9KT" data-note="la"></audio>
+  <audio class="sonidos" src="//goo.gl/MS9HTp" data-note="si"></audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+  <script src="js/task.js"></script>
+
+  
+</body>
+</html>

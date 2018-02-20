@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+button, input[type=button], input[type=submit] {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.keyboard {
+  background-color: whitesmoke;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+}
+
+.keyboard-key {
+  font-family: monospace;
+  font-size: 20px;
+  border: 1px solid #D24D57;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  background-color: whitesmoke;
+  color: #353535;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.keyboard-key--pressed {
+  background-color: #D24D57;
+  color: whitesmoke;
+}
+
+.keyboard-key-space {
+  height: 50px;
+  width: 250px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 16px;
+  background-color: #bebebe;
+}
+
+.info-press {
+  width: 300px;
+}
+
+.info-click {
+  width: 300px;
+}
+
+.info-text {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  vertical-align: middle;
+  color: #D24D57
+}
+
+.sound-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sound-label {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: monospace;
+  font-size: 22px;
+  font-weight: bolder;
+}
+

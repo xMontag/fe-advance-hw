@@ -1,0 +1,38 @@
+.timer {
+  width: 33%;
+}
+.word {
+  display: flex;
+  justify-content: center;
+  width: 33%;
+  text-align: center;
+}
+
+.word__char {
+  color: royalblue;
+}
+
+.word__char_correct {
+  color: olivedrab;
+}
+
+.word__char_incorrect {
+  color: orangered;
+}
+
+.result {
+  width: 33%;
+  text-align: right;
+  font-size: 16px;
+}
+.exercise-wrapper {
+    padding: 20px;  
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 30px;
+    background-color: #bebebe;
+}
+.info {
+  display: none;
+}

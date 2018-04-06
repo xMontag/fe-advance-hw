@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
+  <link rel="stylesheet" href="../module-09/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
+  <div class="exercise-wrapper">
+    <div class="timer">00:00:0000</div>
+    <div class="word">dfsfgerg</div>
+    <div class="result">
+      <div class="current-result">Current result:
+        <span class="current-result_val">0.000</span> char per second
+      </div>
+      <div class="best-result">Best result:
+        <span class="best-result_val">0.000</span> char per second
+      </div>
+    </div>
+  </div>
+
+
 
   <div class="info">
-    <h2 class="info-press">You pressed: <span class="key-pressed info-text"></span></h2>
+    <h2 class="info-press">You pressed:
+      <span class="key-pressed info-text"></span>
+    </h2>
     <h2 class="info-click">
-      click x = <span class="x-position info-text"></span>
-      click y = <span class="y-position info-text"></span>
+      click x =
+      <span class="x-position info-text"></span>
+      click y =
+      <span class="y-position info-text"></span>
     </h2>
     <div>
-      <input class = "sound-checkbox" type="checkbox" value="None" id="slideThree" name="check" checked />
+      <input class="sound-checkbox" type="checkbox" value="None" id="slideThree" name="check" checked />
       <label for="slideThree" class="sound-label">Sound</label>
     </div>
   </div>
-  
+
   <div class="keyboard"></div>
-  
+
   <script id="keyboard-tmpl" type="text/x-handlebars-template">
-  {{#each this}}
-    <div class="keyboard-row">
     {{#each this}}
+    <div class="keyboard-row">
+      {{#each this}}
       <button class="keyboard-key">{{this}}</button>
-    {{/each}}
+      {{/each}}
     </div>
-  {{/each}}
+    {{/each}}
     <div class="keyboard-row">
       <button class="keyboard-key keyboard-key-space"></button>
     </div>
   </script>
-  
+
+  <script id="word-tmpl" type="text/x-handlebars-template">
+    {{#each this}}
+      <div class="word__char">{{this}}</div>
+    {{/each}}
+  </script>
+
   <audio class="sonidos" src="//goo.gl/T1rxRG" data-note="do"></audio>
   <audio class="sonidos" src="//goo.gl/KT8FN3" data-note="re"></audio>
   <audio class="sonidos" src="//goo.gl/1SfsNS" data-note="mi"></audio>
@@ -44,9 +72,13 @@
   <audio class="sonidos" src="//goo.gl/Bjd9KT" data-note="la"></audio>
   <audio class="sonidos" src="//goo.gl/MS9HTp" data-note="si"></audio>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
-  <script src="js/task.js"></script>
 
-  
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+  <script src="../module-09/js/task.js"></script>
+  <script src="js/task.js"></script>
 </body>
+
 </html>

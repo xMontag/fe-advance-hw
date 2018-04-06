@@ -75,7 +75,7 @@ function Keyboard(lang) {
     }
   };
 
-  this.removeClassActiveBtn = (even) => {
+  this.removeClassActiveBtn = (event) => {
     if (event.target && !event.target.matches(".keyboard-key")) {
       this.activeBtn.removeClass('keyboard-key--pressed');
     }

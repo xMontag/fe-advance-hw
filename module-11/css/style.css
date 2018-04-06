@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: monospace;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.form__lbl {
+  display: inline-block;
+  width: 130px;
+  padding-left: 30px;
+}
+
+.form__btn {
+  width: 120px;
+  height: 26px;
+}
+
+.form__input-wrapper {
+  padding: 10px;
+}
+
+.form__input-wrapper >:first-child {
+  padding-left: 0;
+}
+
+.form__row {
+  padding: 10px;
+}
+
+.result {
+  border: 1px solid gray;
+  width: 800px;
+  height: 300px;
+  min-height: 200px;
+  margin: 10px;
+  overflow: auto;
+}
